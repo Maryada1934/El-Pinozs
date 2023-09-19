@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="style00.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+	<form>
+    <div class="form-container">
+      <div class="personal-information">
+        <h1>Payment Information</h1>
+      </div> <!-- end of personal-information -->
+           
+          <input id="column-left" type="text" name="first-name" placeholder="First Name" required/>
+          <input id="column-right" type="text" name="last-name" placeholder="Surname" required/>
+          <input id="input-field" type="text" name="number" placeholder="Card Number"required/>
+          <input id="column-left" type="text" name="expiry" placeholder="MM / YY"required/>
+          <input id="column-right" type="text" name="cvc" pattern="[0-9]{3}" placeholder="CCV"required/>
+         
+          <div class="card-wrapper"></div>
+      
+          <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
+          <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+          <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
+          <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+          <input id="input-button" type="submit" value="Pay Now"/>
+        
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
